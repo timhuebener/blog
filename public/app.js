@@ -68,3 +68,7 @@ fetch("https://blogback.timhuebener.com/posts")
             postsArea.appendChild(post)
         });
     })
+    .catch(() => {
+        const postsArea = document.getElementById("posts")
+        postsArea.innerHTML = "No blog posts at the moment..."
+    })
