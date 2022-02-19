@@ -5,7 +5,7 @@
     <title>Piku | timhuebener</title>
     <link rel="stylesheet" href="../styles/baseline.css">
     <link rel="stylesheet" href="../styles/responsive.css">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="How to set up Piku. Simple solution for hosting websites and web-apps.">
     <meta name=”robots” content="follow, index">
@@ -41,11 +41,11 @@
         <section>
             <h1 style="margin-bottom: 0;">Hosting your website with Piku</h1>
             <h3>06 February 2022</h3>
-    
+
             <p>
-                
+
             </p>
-    
+
         </section>
 
     </main>
@@ -54,6 +54,15 @@
 
 <script>
     //TODO: add view count increaser
+    fetch("https://blogback.timhuebener.com/views",
+        {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify({ url: "https://blog.timhuebener.com/posts/2022-02-06-piku" })
+        })
 
 </script>
 
